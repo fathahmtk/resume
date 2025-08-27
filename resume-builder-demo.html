@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder - Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .template-preview {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-file-alt text-3xl text-indigo-600 mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-900">ResumeBuilder Pro</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-home mr-1"></i> Home
+                    </button>
+                    <button class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-info-circle mr-1"></i> About
+                    </button>
+                    <button class="btn-primary text-white px-4 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-user-plus mr-1"></i> Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Professional Resume Builder
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                Create stunning professional resumes with our intuitive builder. 
+                Real-time preview, modern templates, and instant PDF export.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-primary text-white px-8 py-4 rounded-lg text-lg font-semibold">
+                    <i class="fas fa-rocket mr-2"></i> Get Started Free
+                </button>
+                <button class="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100">
+                    <i class="fas fa-play mr-2"></i> Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Why Choose ResumeBuilder Pro?
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to create a professional resume in minutes
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon text-blue-600">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Modern Templates</h3>
+                    <p class="text-gray-600">
+                        Choose from professional modern and classic resume templates designed by experts
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon text-green-600">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real-time Preview</h3>
+                    <p class="text-gray-600">
+                        See your resume update instantly as you type with our live preview feature
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon text-purple-600">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">PDF Export</h3>
+                    <p class="text-gray-600">
+                        Download your resume as a professional PDF document optimized for ATS systems
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon text-orange-600">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Mobile Friendly</h3>
+                    <p class="text-gray-600">
+                        Build your resume on any device with our responsive design
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Professional Templates
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Choose the perfect template for your industry and style
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Modern Template -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
+                        <h3 class="text-2xl font-bold mb-2">Modern Template</h3>
+                        <p class="opacity-90">Perfect for tech and creative industries</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="template-preview mb-6">
+                            <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+                                <h4 class="text-xl font-bold">John Doe</h4>
+                                <p class="text-sm opacity-90">Software Engineer | john.doe@email.com</p>
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-blue-600 mb-2">Experience</h5>
+                                    <div class="text-sm text-gray-600">
+                                        <p class="font-medium">Senior Developer - Tech Corp</p>
+                                        <p class="text-xs">2020 - Present</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-blue-600 mb-2">Skills</h5>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">JavaScript</span>
+                                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">React</span>
+                                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                            Use Modern Template
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Classic Template -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-gray-800 to-gray-600 text-white p-6">
+                        <h3 class="text-2xl font-bold mb-2">Classic Template</h3>
+                        <p class="opacity-90">Ideal for corporate and traditional industries</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="template-preview mb-6">
+                            <div class="border-b-2 border-gray-800 pb-4">
+                                <h4 class="text-xl font-bold text-center uppercase">Jane Smith</h4>
+                                <p class="text-center text-sm text-gray-600">Marketing Manager | jane.smith@email.com</p>
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-4">
+                                    <h5 class="font-semibold uppercase text-gray-800 mb-2 border-b border-gray-300 pb-1">Experience</h5>
+                                    <div class="text-sm text-gray-600">
+                                        <p class="font-medium">Marketing Director - Business Inc.</p>
+                                        <p class="text-xs">2018 - Present</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="font-semibold uppercase text-gray-800 mb-2 border-b border-gray-300 pb-1">Skills</h5>
+                                    <div class="text-sm text-gray-600">
+                                        Digital Marketing, Strategy, Analytics, Leadership
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900">
+                            Use Classic Template
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    How It Works
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Create your professional resume in three simple steps
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-blue-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Create Account</h3>
+                    <p class="text-gray-600">
+                        Sign up with your email and password to get started. It's free and takes less than a minute.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-green-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Build Resume</h3>
+                    <p class="text-gray-600">
+                        Fill in your information, choose your template, and see real-time preview as you type.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-purple-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Export & Share</h3>
+                    <p class="text-gray-600">
+                        Download as PDF, print directly, or share your professional resume with employers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">
+                Ready to Create Your Perfect Resume?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join thousands of professionals who have built their resumes with ResumeBuilder Pro
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-primary text-white px-8 py-4 rounded-lg text-lg font-semibold">
+                    <i class="fas fa-rocket mr-2"></i> Start Building Now
+                </button>
+                <button class="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100">
+                    <i class="fas fa-eye mr-2"></i> View Examples
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-file-alt text-2xl text-indigo-400 mr-2"></i>
+                        <span class="text-xl font-bold">ResumeBuilder Pro</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Create professional resumes in minutes with our intuitive builder.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">Features</a></li>
+                        <li><a href="#" class="hover:text-white">Templates</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Examples</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 ResumeBuilder Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add click animations to buttons
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Create ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+    </script>
+
+    <style>
+        button {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: ripple-animation 0.6s ease-out;
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+</html>
